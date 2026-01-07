@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(32, 32, 32);
+}
+/* para que todas las imagenes estén en el fondo */
+.images{
+  position: absolute;
+  /* esto para arregla un error de centrado */
+  inset: auto auto auto 0px;
+  /* tamaño */
+  width: 100%;
+  /* opacidad 0 */
+  opacity: 0;
+}
+/* css del texto y su contenedor */
+.text-box{
+  width: 75%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12%;
+  z-index: 2;
+}
+.texto{
+  color: white;
+  font-size: 5vw;
+  margin: auto 2vw auto 2vw;
+}
+/* texto pequeño */
+.texto-mini{
+  color: rgb(178, 178, 178);
+  font-size: 1vw;
+}

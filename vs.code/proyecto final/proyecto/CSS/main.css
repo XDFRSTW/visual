@@ -1,0 +1,633 @@
+/* El default */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente de letra personalizada */
+@font-face {
+    font-family: 'Bitter';
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/bitter/v40/rax-HiqOu8IVPmn7erxkJD1img.woff2) format('woff2');
+}
+
+/* Aplicando la fuente de letra a todo el documento */
+body {
+    font-family: "Bitter";
+    background-color: rgb(133, 186, 35);
+}
+
+
+/* CSS de la página de inicio y clases comunes entre páginas */
+
+
+/* La imagen del principio de la página */
+.attach {
+    /* Posición inexacta del archivo */
+    background-image: url("/images/attach.png");
+    /* Posición exacta del archivo */
+    /* background-image: url("file:///C:/Users/heimd/Desktop/vs.code/proyecto%20final/proyecto/images/attach.png"); */
+    /* Dándole un efecto interesante a la imagen */
+    background-attachment: fixed;
+    background-position-x: center;
+    /* Hace que la imagen se vea algo mejor */
+    background-size: cover;
+    height: 50vw;
+    width: 100%;
+}
+
+/* Desactivado */
+.active {
+    display: block;
+}
+
+/* Menú pantallas grandes */
+
+
+/* Caja del menú */
+.big-screen-box {
+    position: fixed;
+    /* Para que el menú se encuentre arriba de la página */
+    transform: translateY(-50vw);
+    display: flex;
+}
+
+/* Menú de compra */
+.big-screen-shoping ul {
+    /* Menú en disposición horizontal y trasparente */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(177, 162, 27);
+    opacity: 75%;
+}
+
+/* Enlaces de compra (Enbelleciendo) */
+.big-screen-shoping ul li a {
+    /* Letra negra en fondo blanco */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: auto 8vw auto auto;
+}
+
+/* Botón del menú desplegable */
+.big-screen-menu-button {
+    /* Para que se encuentre en la esquina de la derecha */
+    transform: translateX(calc(75vw - (16rem)));
+    background-color: rgb(177, 162, 27);
+    cursor: pointer;
+    opacity: 75%;
+}
+
+/* Menú desplegable en pantallas grandes y medianas */
+.big-screen-menu-box {
+    display: none;
+    opacity: 75%;
+    background-color: rgb(177, 162, 27);
+    /* Possicionándolo en la esquina superior derecha, debajo del botón del menú */
+    position: absolute;
+    inset: 0 0 auto auto;
+    transform: translate(calc(75vw - (16rem)), 2.25rem);
+}
+
+.big-screen-menu-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.big-screen-menu-box ul li {
+    margin: auto 1rem auto 1rem;
+}
+
+.big-screen-menu-box ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Menú desplegable en pantallas pequeñas (burger) */
+.small-screen-menu-box {
+    opacity: 75%;
+    background-color: rgb(177, 162, 27);
+    /* Posicionando el menú debajo del título/marca de agua */
+    position: absolute;
+    inset: 4rem auto auto auto;
+
+}
+
+
+.small-screen-menu-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem 0.75rem 0rem;
+}
+
+.small-screen-menu-box ul li {
+    margin: 1rem 0rem 0.25rem 0rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    /* Más ancho que el contenido de su interior */
+    width: 14rem;
+}
+
+.small-screen-menu-box ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Título del header */
+.menu-title {
+    position: fixed;
+    background-color: rgb(214, 154, 76);
+    padding: 0.5rem;
+    /* Margen a la pantalla */
+    transform: translate(1rem, -6rem);
+    opacity: 75%;
+}
+
+/* Imágenes del menú */
+.icon {
+    width: 2rem;
+}
+
+/* Haciendo desaparecer el botón de pantallas pequeñas (aplicando también su diseño) */
+.small-screen-menu-button {
+    display: none;
+    background-color: rgb(177, 162, 27);
+    /* No tiene mucho sentido dejar esto (Aún así lo dejo) */
+    cursor: pointer;
+    /* Posicionando en la pantalla */
+    transform: translate(9.70rem, calc(-50vw + 2.2rem));
+    position: fixed;
+    opacity: 75%;
+}
+
+
+
+/* CSS de la página "Tienda" [header compartido con el resto de páginas] */
+/* Título de las páginas */
+.ext-header-title {
+    background-color: rgb(177, 162, 27);
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+/* Caja del botón para ir a la página de inicio */
+.ext-header-box {
+    background-color: rgb(177, 162, 27);
+    padding: 0.5rem 0rem 1rem 2rem;
+    border-bottom: 2px solid green;
+}
+
+/* Eliminando decoraciones de las palabras , añadir color negro y borde */
+.ext-header-box ul {
+    list-style: none;
+}
+
+.ext-header-box ul a {
+    text-decoration: none;
+    color: black;
+    padding: 0.25rem;
+    border: 3px solid rgb(215, 175, 100);
+    transition: 0.5s;
+}
+
+/* Cambia el color al hacerle ¿foco? */
+.ext-header-box ul a:hover {
+    background-color: rgb(215, 175, 100);
+
+}
+
+/* CSS de la sección "Productos detacados" (slider) [Prefiero hacer un slider antes que un carrusel] */
+.slider-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.75rem;
+    justify-content: center;
+    border-left: 3px solid rgb(160, 199, 68);
+    border-right: 3px solid rgb(160, 199, 68);
+    height: 21.25rem;
+}
+
+/* Arreglando la caja del slider */
+.slider-fix {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 21.25rem;
+    position: absolute;
+
+
+}
+
+/* Para mover el slider */
+.carrusel-button-left {
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: auto auto auto auto;
+    cursor: pointer;
+}
+
+.carrusel-button-right {
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: auto auto auto auto;
+    cursor: pointer;
+}
+
+/* CSS común a todos los productos destacados */
+
+.marked {
+    margin: 0.5rem;
+    border: 3px solid rgb(222, 84, 84);
+    padding: 0.5rem;
+    background-color: rgb(214, 154, 76);
+    position: relative;
+    display: none;
+}
+
+
+/* CSS de la sección "Productos" [Este CSS va ha reutilizarse en numerosas ocasiones] */
+/* Caja que avisa que el producto ha sido añadido al carrito */
+.cart-confirm {
+    position: fixed;
+    inset: 0 0 auto auto;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    width: 7.5rem;
+    padding: 0.5rem;
+    opacity: 85%;
+    display: none;
+    text-align: center;
+}
+
+.cart-confirm-text {
+    font-size: 1.25rem;
+}
+
+.section-title {
+    display: flex;
+    justify-self: center;
+    font-size: 2.75rem;
+    margin: 3rem;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.75rem;
+    justify-content: center;
+    border-left: 3px solid rgb(160, 199, 68);
+    border-right: 3px solid rgb(160, 199, 68);
+}
+
+.product {
+    margin: 0.5rem;
+    border: 3px solid rgb(222, 84, 84);
+    padding: 0.5rem;
+    background-color: rgb(214, 154, 76);
+
+}
+
+/* Clase común a toda la información de cada producto */
+.product-info {
+    padding: 0.25rem 0rem 0.5rem 1.5rem;
+}
+
+/* Botón para añadir al carrito */
+.add-cart {
+    margin: 0rem 0rem 0rem 8.75rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Imagen del carrito */
+.product-cart {
+    width: 30px;
+}
+
+/* Nombre del producto */
+.name-info {
+    color: rgb(0, 8, 157);
+    border-bottom: 3px solid rgb(0, 8, 157);
+    font-size: 1.25rem;
+}
+
+/* Coste del producto */
+.cost-info {
+    border-bottom: 2px dotted rgb(0, 8, 157);
+}
+
+/* Cantidad que queda del producto */
+.amount-info {
+    background-color: rgb(168, 159, 32);
+    width: 7.5rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+/* Imagen del producto */
+.food-image {
+    display: flex;
+    height: 125px;
+    width: 200px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/* CSS de la páginas de formularios*/
+form {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    background-color: rgb(197, 211, 158);
+    margin: 4vw;
+    border-radius: 1rem;
+}
+
+.form-title-box {
+    height: 7.8125rem;
+    border-bottom: 2px solid rgb(0, 77, 0);
+}
+
+.form-content-box {
+    padding: 0.5rem;
+}
+
+label {
+    text-decoration: underline;
+}
+
+.form-boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.form-button {
+    display: flex;
+    justify-self: center;
+    margin: 1rem auto auto auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-message-box {
+    margin: 1rem auto auto auto;
+    display: none;
+}
+
+.form-message {
+    padding: 0.25rem;
+    background-color: black;
+    color: rgb(0, 255, 38);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CSS de las páginas "carrito" y "pay" */
+/* Carrito */
+.ext-header-fix {
+    margin: 0.8rem auto auto auto;
+}
+
+/* Pay */
+/* Color de fondo del tiempo estimado */
+.time-box {
+    background-color: rgb(197, 211, 158);
+
+}
+
+/* Tamaño de la fuente del tiempo estimado y color */
+.time-left {
+    font-size: 2rem;
+    color: rgb(23, 49, 117);
+}
+
+/* Información del título con un tamaño menor (para que sea más responsivo) */
+.smaller-title {
+    font-size: 2rem;
+}
+
+/* CSS de la ampliación de imagen (Función completamente carente de sentido en pantallas pequeñas. Se ve incluso peor) */
+
+.expansion-box {
+    /* No se muy birn lo que he hecho aquí pero funciona (cuando le añades un borde a esta caja descubres que el div es una línea vertical) */
+    z-index: 3;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0 50%;
+}
+
+.expansion-button {
+    border: 3px solid black;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.expansion-image {
+    width: 50vw;
+    /* Mucho borde para que se vea mejor la imagen */
+    border: 0.5rem solid black;
+}
+
+/* CSS de todo lo relacionado con las Manolo noticias */
+.news-fix {
+    border-bottom: 1px solid black;
+}
+
+.news-box {
+    border: 1px solid black;
+    padding: 0.25rem;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.125rem;
+}
+
+.news-title {
+    font-size: 8vw;
+    font-weight: 100;
+    word-break: break-all;
+    border-bottom: 1px solid black;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.125rem;
+}
+
+/* Se puede omitir esta clase */
+.news-link {
+    cursor: pointer;
+}
+
+.news-image {
+    width: 80vw;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 1rem auto 1rem auto;
+}
+
+/* Clase inútil */
+/* .news-small-explain-box {
+        background-color: white;
+} */
+
+.news-small-explain {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    line-height: 2.25rem;
+}
+
+/* Vídeo */
+
+.video-box {
+    margin: 1rem auto 0.5rem auto;
+}
+
+.video-box video {
+    width: 80vw;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+/* Mapa */
+
+/* Caja de la sección */
+.map-box {
+    margin: 1rem auto 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Título de la sección mapa */
+.news-map {
+    text-align: center;
+}
+
+/* Tamaño del mapa */
+.map {
+    height: 450px;
+}
+
+/* Línea superior */
+
+.overline{
+   width: 100%;
+       border-top: 1px solid black;
+       margin: 1rem;
+}
+
+/* [CSS para que las página sea responsiva aquí dentro] */
+/* Responsivo a partir de los 800 px (porque empieza a verse feo) */
+
+@media (max-width: 800px) {
+
+    /* Responsividad de la ampliación de imágenes */
+    .expansion-image {
+        width: 80vw;
+    }
+
+    /* Haciendo responsivo el header de la página principal */
+
+    /* Título responsivo */
+    .menu-title {
+        font-size: 100%;
+        /* Mover el título hasta el menú de compra */
+        transform: translate(0, calc(-80vw + 2.2rem));
+    }
+
+    /* Desactivando el menú desplegable de pantallas grandes/medianas y activando el de pantallas pequeñas*/
+    /* "Truco sucio" */
+    .active {
+        display: none;
+    }
+
+    .big-screen-menu-box {
+        /* Display: none; no funciona en está situación */
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Menú pantallas pequeñas */
+    .small-screen-menu-button {
+        display: block;
+    }
+
+    /* Dándole más altura a la imagen del header */
+    .attach {
+        height: 80vw;
+    }
+
+    /* Arreglando todos los problemas de posiciones que surgen al cambiar el tamaño de la imagen */
+    .big-screen-box {
+        transform: translateY(-80vw);
+    }
+
+    .small-screen-menu-button {
+        transform: translate(9.70rem, calc(-80vw + 2.2rem));
+    }
+
+}
+
+/* Desactivar la interfaz del menú si es una pantalla grande o mediana */
+
+@media (min-width: 800px) {
+
+    /* Esto elimina un fallo en el que el menú no desaparece en los cambios de tamaño */
+    .small-screen-menu-box {
+        position: absolute;
+        opacity: 0;
+    }
+
+}
+
+/*Solucionando problemas con el responsive del mapa */
+@media (max-width: 650px) {
+    .map {
+        width: 100%;
+        height: 75vw;
+    }
+}
+
+/* CSS del footer (común a todas las páginas) */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 162, 27);
+    height: 6rem;
+}
+
+footer div {
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p {
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(129, 118, 21);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frutas manolo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/svg" href="images/icon.svg">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Header de la  página  -->
+
+    <header>
+
+        <!-- Título -->
+        <h1 class="ext-header-title title">Pagar/estado del envío</h1>
+
+        <!-- Volver a la página de inicio -->
+        <div class="ext-header-box">
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    <!-- Main de la página -->
+
+
+
+    <main>
+        <!-- Contenedor de los objetos ha comprar -->
+
+        <section>
+
+            <!-- Esto de aquí abajo (pusto como comentario) fue descartados por motivosde optimización -->
+
+            <!-- <h2>Productos que vas a comprar : </h2>
+            <div> -->
+            <!-- Los objetos se añaden con java script (¿funciones?) -->
+            <!-- Esta es la sintaxis de los objetos : -->
+            <!-- <div>
+                    <div>
+                        <div><span>nombre:</span></div>
+                        <div><span>precio/kg:</span></div>
+                        <div><span>en stock:</span></div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+            <!-- botón de pagar -->
+            <div>
+                <div class="form-title-box"><span id="total-cost" class="section-title smaller-title">Precio total :</span></div>
+                <form method="post" action="no.txt">
+                    <div class="form-content-box">
+                        <div class="form-boxes">
+                            <label for="dir">Dirección de envío</label>
+                            <input type="text" id="dir" placeholder="*escribe">
+                        </div>
+                        <!-- Para robarle los datos a los usuarios -->
+                        <div class="form-boxes">
+                            <label for="bank">Número de la targeta bancaria</label>
+                            <input type="number" id="bank" placeholder="*escribe">
+                        </div>
+
+                        <!-- Si la dirección de envío está vacía aparecerá un mensaje. El número de la targeta es obligatorio -->
+                        <button title="Pagar" id="pay" class="form-button form-boxes" type="button">Pagar</button>
+                        <div class="form-message-box">
+                            <p id="message">Pago realizado con éxito</p>
+                        </div>
+                    </div>
+            </div>
+            </form>
+
+            <!-- Mensaje si pagas con la dirección vacía (uso un prompt porque es la cosa más fea del mundo, además te están robando los datos. Fruterias Manolo no es una página web segura) -->
+            <!-- Truco sucio de la página para quedarse con el dinero de sus clientes [Mensaje mostrado en el prompt] -->
+            <!-- <p>Al no haber adherido una dirección, tu comprá nunca llegará a su destino. Aun así tu
+                dinero nos será de gran ayuda</p> -->     
+
+        </section>
+        <!-- Estado del envío -->
+
+        <section>
+            <h3 class="section-title">Estado del envío</h3>
+            <div class="time-box">         
+                    <span class="time-left">Tiempo estimado : </span>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- The page footer -->
+
+
+
+    <footer>
+        <!-- Deutsch text, weil es sehr shôn ist -->
+        <!-- Típico texto de los footer escrito en alemán (el dueño de la página se alemán [Deutschland]) -->
+        <div>
+            <p>Ludwig van Beethoven ist der beste</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

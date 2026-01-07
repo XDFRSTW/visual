@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frutas manolo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/svg" href="images/icon.svg">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Header de la página -->
+
+
+
+    <header>
+
+        <div class="attach"></div>
+
+
+        <!-- Menú para pantalla grandes/medianas -->
+        <div class="big-screen-box">
+
+            <!-- Esto no es el menú hamburguesa, se muestra igual en todos los dispositivos -->
+            <div class="big-screen-shoping">
+                <ul>
+                    <!-- Para realizar las compras en la página (uso de java sript) -->
+                    <li><a href="carrito.html"><img class="icon" src="images/cart.svg" alt="Carrito"
+                                title="Carrito"></a></li>
+                    <li><a href="pay.html">Pagar/estado del envío</a></li>
+                    <li><a class="screen-fix" href="shop.html">Tienda</a></li>
+                </ul>
+            </div>
+
+            <!-- MenÚ desplegable  -->
+            <!-- En pantallas pequeñas, esto es el menú hamburguesa -->
+            <!-- Botón del menú (java script) -->
+            <button class="big-screen-menu-button active"><img class="icon" src="images/menu.svg" alt="Abrir menú"
+                    title="Menu"></button>
+            <div class="big-screen-menu-box">
+                <ul>
+                    <!-- Formularios, y una página hablando sobre el dueño de dicha -->
+                    <li><a href="contacto.html">Contactar con manolo</a></li>
+                    <li><a href="regin.html">Registrarse/Iniciar sesión</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- Menú de pantallas pequeñas para que la página sea responsivamente responsosa (Decidí reducir mucho la versión de pantallas pequeñas (optimizado)) -->
+        <!-- <div style="display: none;" class="small-screen-box"> -->
+
+
+
+        <!-- Decidí optimizar esta parte del HTML -->
+
+        <!-- <div class="big-screen-shoping">
+                <ul>
+                     Para realizar las compras en la página (uso de java sript)
+                    <li><a href="carrito.html"><img src="images/cart.svg" alt="Carrito" title="Carrito"></a></li>
+                    <li><a href="pay.html">Pagar compra</a></li>
+                    <li><a href="shop.html">Tienda</a></li>
+                </ul>
+            </div>  -->
+
+        <!-- MenÚ desplegable  -->
+        <!-- Esto es el menú hamburguesa -->
+        <!-- Botón del menú (java script) -->
+        <button class="small-screen-menu-button"><img class="icon" src="images/menu.svg" alt="Abrir menú"
+                title="Menu"></button>
+        <div style="display: none;" class="small-screen-menu-box">
+            <ul>
+                <!-- Formularios y una página hablando sobre el dueño de dicha -->
+                <li><a href="contacto.html">Contactar con manolo</a></li>
+                <li><a href="regin.html">Registrarse/Iniciar sesión</a></li>
+            </ul>
+        </div>
+
+
+        <!-- </div> -->
+
+        <!-- Título -->
+        <h1 class="menu-title  title">FRUTAS MANOLO</h1>
+
+    </header>
+
+
+
+    <!-- Main de la página -->
+
+
+
+    <main>
+
+
+        <!-- (Un buscador)[Descartado] -->
+
+        <!-- Sección para noticias de la granja de Manolo -->
+
+
+        <section class="news-box">
+            <!-- Lo menos importante en la página (el CSS del título es el mismo que el de los h2) -->
+             <div class="news-fix"><h3 class="section-title">Manolo Noticias</h3></div>
+            <!-- Noticia colocada aleatoriamente según una selección (no hay fetch pero si java script. La selección de noticias se encuentra en el js) -->
+            <div class="news">
+                <!-- Título de la Manolo noticia, te lleva a un article al pulsar -->
+                <h4 class="news-title">Manolo Noticias</h4>
+                <!-- Imagen de la Manolo noticia y una breve explicación de esta -->
+                <div class="news-content">
+                    <!-- Imagen -->
+                        <!-- El link se añade con java script -->
+                        <a class="news-link">
+                            <picture>
+                                <!-- No podemos poner el webp -->
+                                <!-- <source srcset="" type="image/webp"> -->
+                                <img class="news-image" src="images/" title="Manolo noticia"
+                                    alt="No ha podido cargarse la imagen, perdone las molestias" loading="lazy">
+                            </picture>
+                        </a>
+                    <!-- Explicación -->
+                    <div>
+                        <p class="news-small-explain">No ha podido cargarse la noticia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- The page footer -->
+
+
+
+    <footer>
+        <!-- Deutsch text, weil es sehr shôn ist -->
+        <!-- Típico texto de los footer escrito en alemán (el dueño de la página se alemán [Deutschland]) -->
+        <div>
+            <p>Ludwig van Beethoven ist der beste</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

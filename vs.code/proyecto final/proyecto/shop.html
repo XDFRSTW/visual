@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frutas manolo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/svg" href="images/icon.svg">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Mismo header de la página principal -->
+
+    <header>
+
+        <!-- Título -->
+        <h1 class="ext-header-title title">Tienda</h1>
+
+
+        <!-- Volver a la página de inicio -->
+        <div class="ext-header-box">
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    <!-- Main de la página -->
+
+
+
+    <main>
+        <!-- Mensaje que confirma que tu compra se ha añadido al carrito -->
+        <div id="ok" class="cart-confirm">
+            <p class="cart-confirm-text">Tu compra ha sido añadida al carrito</p>
+        </div>
+
+        <!-- Productos destacados (Slider) -->
+        <section>
+            <h2 class="section-title">Productos destacados</h2>
+            <div class="slider-box">
+                <div class="slider-fix">
+                    <!-- Botones para mover el slider a la izquierda -->
+                    <button title="Izquierda" class="carrusel-button-left" id="carrusel-button-left">[-</button>
+                    <!-- Sintaxis de cada uno de los productos destacados (Igual que la de los productos de la tienda [java script] )-->
+                    <!-- Manzana -->
+                    <div class=" marked">
+                        <div>
+                            <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                        src="images/cart.svg" alt="Añadir al carrito"
+                                        title="Añadir al carrito"></button>
+                            </div>
+                            <div class="product-info name-info"><span>Manzanas</span></div>
+                            <div class="product-info cost-info"><span>0.95 €/kg</span></div>
+                            <div class="product-info amount-info"><span>En stock: 131</span></div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="images/manzana.webp" type="image/webp">
+                                <img class="food-image" src="images/manzana.png" alt="No ha podido cargarse la imagen"
+                                    title="manzana" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Pera -->
+                    <div class=" marked">
+                        <div>
+                            <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                        src="images/cart.svg" alt="Añadir al carrito"
+                                        title="Añadir al carrito"></button>
+                            </div>
+                            <div class="product-info name-info"><span>Peras</span></div>
+                            <div class="product-info cost-info"><span>1 €/kg</span></div>
+                            <div class="product-info amount-info"><span>En stock: 86</span></div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="images/pera.webp" type="image/webp">
+                                <img class="food-image" src="images/pera.png" alt="No ha podido cargarse la imagen"
+                                    title="pera" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Naranja -->
+                    <div class=" marked">
+                        <div>
+                            <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                        src="images/cart.svg" alt="Añadir al carrito"
+                                        title="Añadir al carrito"></button>
+                            </div>
+                            <div class="product-info name-info"><span>Naranja</span></div>
+                            <div class="product-info cost-info"><span>1.25 €/kg</span></div>
+                            <div class="product-info amount-info"><span>En stock: 1997</span></div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="images/naranja.webp" type="image/webp">
+                                <img class="food-image" src="images/naranja.png" alt="No ha podido cargarse la imagen"
+                                    title="naranja" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Pimiento -->
+                    <div class=" marked">
+                        <div>
+                            <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                        src="images/cart.svg" alt="Añadir al carrito"
+                                        title="Añadir al carrito"></button>
+                            </div>
+                            <div class="product-info name-info"><span>Pimiento</span></div>
+                            <div class="product-info cost-info"><span>0.75 €/kg</span></div>
+                            <div class="product-info amount-info"><span>En stock: 33</span></div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="images/pimiento.webp" type="image/webp">
+                                <img class="food-image" src="images/pimiento.png" alt="No ha podido cargarse la imagen"
+                                    title="pimiento" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Pomelo -->
+                    <div class=" marked">
+                        <div>
+                            <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                        src="images/cart.svg" alt="Añadir al carrito"
+                                        title="Añadir al carrito"></button>
+                            </div>
+                            <div class="product-info name-info"><span>Pomelo</span></div>
+                            <div class="product-info cost-info"><span>1.12 €/kg</span></div>
+                            <div class="product-info amount-info"><span>En stock: 3</span></div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="images/pomelo.webp" type="image/webp">
+                                <img class="food-image" src="images/pomelo.png" alt="No ha podido cargarse la imagen"
+                                    title="pera" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Botones para mover el slider a la derecha -->
+                    <button title="Derecha" class="carrusel-button-right" id="carrusel-button-right">-]</button>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Productos de la tienda -->
+        <section>
+            <h3 class="section-title title">Productos</h3>
+            <div class="products-box">
+                <!-- Todos los objetos están aquí colocados -->
+                <!-- Sintaxis de los productos de la tienda -->
+                <!-- Pera -->
+                <div class="product">
+                    <!-- Datos del producto -->
+                    <div>
+                        <!-- Meter objetos en el carrito -->
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Peras</span></div>
+                        <div class="product-info cost-info"><span>1 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 86</span></div>
+                    </div>
+                    <!-- Foto del producto -->
+                    <div>
+                        <picture>
+                            <source srcset="images/pera.webp" type="image/webp">
+                            <img class="food-image" src="images/pera.png" alt="No ha podido cargarse la imagen"
+                                title="pera" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <!-- Añadiendo el resto de productos -->
+                <!-- Manzana -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Manzanas</span></div>
+                        <div class="product-info cost-info"><span>0.95 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 131</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/manzana.webp" type="image/webp">
+                            <img class="food-image" src="images/manzana.png" alt="No ha podido cargarse la imagen"
+                                title="manzana" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <!-- naranja -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Naranja</span></div>
+                        <div class="product-info cost-info"><span>1.25 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 1997</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/naranja.webp" type="image/webp">
+                            <img class="food-image" src="images/naranja.png" alt="No ha podido cargarse la imagen"
+                                title="naranja" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <!-- Pimiento -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Pimiento</span></div>
+                        <div class="product-info cost-info"><span>0.75 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 33</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/pimiento.webp" type="image/webp">
+                            <img class="food-image" src="images/pimiento.png" alt="No ha podido cargarse la imagen"
+                                title="pimiento" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <!-- Pomelo -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Pomelo</span></div>
+                        <div class="product-info cost-info"><span>1.12 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 3</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/pomelo.webp" type="image/webp">
+                            <img class="food-image" src="images/pomelo.png" alt="No ha podido cargarse la imagen"
+                                title="pera" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Algarroba -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Algarroba</span></div>
+                        <div class="product-info cost-info"><span>0.35 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 3001</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/algarroba.webp" type="image/webp">
+                            <img class="food-image" src="images/algarroba.png" alt="No ha podido cargarse la imagen"
+                                title="algarroba" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Brócoli -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Brócoli</span></div>
+                        <div class="product-info cost-info"><span>0 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 0.5</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/brocoli.webp" type="image/webp">
+                            <img class="food-image" src="images/brocoli.png" alt="No ha podido cargarse la imagen"
+                                title="brócoli" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Calabaza -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Calabaza</span></div>
+                        <div class="product-info cost-info"><span>2.65 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 258</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/calabaza.webp" type="image/webp">
+                            <img class="food-image" src="images/calabaza.png" alt="No ha podido cargarse la imagen"
+                                title="calabaza" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Hierbabuena -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Hierbabuena</span></div>
+                        <div class="product-info cost-info"><span>0.85 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 48</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/hierbabuena.webp" type="image/webp">
+                            <img class="food-image" src="images/hierbabuena.png" alt="No ha podido cargarse la imagen"
+                                title="hierbabuena" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Jalapeño -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Jalapeño</span></div>
+                        <div class="product-info cost-info"><span>8.2 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 23</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/jalapeño.webp" type="image/webp">
+                            <img class="food-image" src="images/jalapeño.png" alt="No ha podido cargarse la imagen"
+                                title="jalapeño" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Kaki -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Kaki</span></div>
+                        <div class="product-info cost-info"><span>1.42 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 711</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/kaki.webp" type="image/webp">
+                            <img class="food-image" src="images/kaki.png" alt="No ha podido cargarse la imagen"
+                                title="kaki" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- zanahoria -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Zanahoria</span></div>
+                        <div class="product-info cost-info"><span>0.60 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 501</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/zanahoria.webp" type="image/webp">
+                            <img class="food-image" src="images/zanahoria.png" alt="No ha podido cargarse la imagen"
+                                title="zanahoria" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Uvas rosas -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Uvas rosas</span></div>
+                        <div class="product-info cost-info"><span>2.12 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 40</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/uvarosa.webp" type="image/webp">
+                            <img class="food-image" src="images/uvarosa.png" alt="No ha podido cargarse la imagen"
+                                title="uvas rosas" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Uvas negras -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Uvas negras</span></div>
+                        <div class="product-info cost-info"><span>21.22 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 2011</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/uvanegra.webp" type="image/webp">
+                            <img class="food-image" src="images/uvanegra.png" alt="No ha podido cargarse la imagen"
+                                title="uvas negras" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Uvas blancas -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Uvas blancas</span></div>
+                        <div class="product-info cost-info"><span>3.33 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 007</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/uvablanca.webp" type="image/webp">
+                            <img class="food-image" src="images/uvablanca.png" alt="No ha podido cargarse la imagen"
+                                title="uvas blancas" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Kiwi -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Kiwi</span></div>
+                        <div class="product-info cost-info"><span>3.7 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 101</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/kiwi.webp" type="image/webp">
+                            <img class="food-image" src="images/kiwi.png" alt="No ha podido cargarse la imagen"
+                                title="kiwi" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Pitaya -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Pitaya</span></div>
+                        <div class="product-info cost-info"><span>10.5 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 451</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/pitaya.webp" type="image/webp">
+                            <img class="food-image" src="images/pitaya.png" alt="No ha podido cargarse la imagen"
+                                title="pitaya" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                 <!-- Tomate -->
+                <div class="product">
+                    <div>
+                        <div class="product-info"><button class="add-cart"><img class="product-cart"
+                                    src="images/cart.svg" alt="Añadir al carrito" title="Añadir al carrito"></button>
+                        </div>
+                        <div class="product-info name-info"><span>Tomate</span></div>
+                        <div class="product-info cost-info"><span>5.79 €/kg</span></div>
+                        <div class="product-info amount-info"><span>En stock: 239</span></div>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="images/tomate.webp" type="image/webp">
+                            <img class="food-image" src="images/tomate.png" alt="No ha podido cargarse la imagen"
+                                title="tomate" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- The page footer -->
+
+
+
+    <footer>
+        <!-- Deutsch text, weil es sehr shôn ist -->
+        <!-- Típico texto de los footer escrito en alemán (el dueño de la página se alemán [Deutschland]) -->
+        <div>
+            <p>Ludwig van Beethoven ist der beste</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

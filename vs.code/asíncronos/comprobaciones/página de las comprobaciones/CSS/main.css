@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+/* header que es común a todas las páginas */
+
+body {
+    background-color: black;
+    color: rgb(221, 222, 170);
+}
+
+
+.header {
+    width: 100%;
+    background-color: rgb(61, 26, 9);
+    color: rgb(221, 222, 170);
+
+
+
+}
+
+.header-title {
+    width: 100%;
+    background-color: green;
+    padding-left: 20%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-lupa {
+    position: absolute;
+    inset: 4px auto auto 4px;
+
+
+}
+
+.header-lupa img {
+
+    width: 1rem;
+}
+
+.header-list {
+    width: 100%;
+    word-spacing: 2rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: rgb(221, 222, 170);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(45, 45, 45);
+
+
+
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(221, 222, 170);
+}
+
+
+
+/* main de la página principal */
+
+.article-title {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 68, 68);
+    border: 6px solid rgb(46, 18, 3);
+    margin: 5rem 5% 3rem 5%;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-image {
+    width: 49vw;
+    margin: auto auto 1rem 1%;
+}
+
+.article-text {
+    width: 49vw;
+    margin: auto auto 1rem 1%;
+}
+
+/* para que las noticias sea responsivamente bonitas */
+
+@media (max-width : 800px) {
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .article-image {
+        width: 75vw;
+        margin: auto auto 1rem 15%;
+    }
+
+    .article-text {
+        width: 75vw;
+        margin: auto auto 1rem 15%;
+    }
+
+
+}
+
+
+/* footer que es común a todas las páginas */
+
+.footer {
+    background-color: rgb(44, 0, 0);
+    height: 10rem;
+    display: flex;
+    align-items: end;
+}
+
+.footer-container {
+    background-color: rgb(192, 61, 0);
+    height: 8rem;
+    width: 100%;
+}
+
+.footer-link {
+    background-color: rgb(141, 0, 0);
+    height: 3rem;
+}
+
+.footer-link a {
+    transition: 6s;
+}
+
+.footer-link a:hover {
+    background-color: rgb(255, 0, 0);
+    transition: 6s;
+}
+
+
+/* CSS de las páginas de los formularios */
+
+.externa-image-container {
+    width: 100%;
+    background-color: rgb(99, 47, 15);
+    display: flex;
+    justify-content: center;
+    border: 2rem solid rgb(65, 65, 65);
+
+}
+
+.externa-image {
+    width: 75vw;
+    border: 0.5rem solid green;
+}
+
+.form-title {
+    margin: 3rem auto auto 25%;
+    font-size: 2.5rem;
+    text-decoration: underline overline;
+}
+
+.form-label {
+    margin: 2rem auto auto 25%;
+}
+
+.form-input {
+    margin: 1rem auto 1rem auto;
+    background-color: black;
+    color: white;
+}
+
+.rat-button {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 5%;
+    background-color: black;
+}
+
+.rat-button img{
+    border: 1rem solid rgb(104, 103, 103);
+}
+
+/* responsividad de las responsividades responsivas */
+
+@media (max-width : 400px) {
+    .rat-button img {
+
+        width: 75%;
+
+    }
+    .form-input {
+    margin: 1rem auto 1rem 25%;
+    background-color: black;
+    color: white;
+}
+
+}
