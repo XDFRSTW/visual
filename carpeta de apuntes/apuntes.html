@@ -1,0 +1,23 @@
+<!-- get para coger datos, post para crear datos, put para actualizar, delete para borrar -->
+Esto de abajo es un filtro de objetos, te envía el objeto que cumple con dicho filtro. En este caso aquel cuyo nombre sea mayor de 50 y menor que 70. 
+<!-- db.productos.find({name: {$gte: 50,lte: 70}})--> Siemprese pone db. , seguido del nombre que le hayas dado a la lista de objetos y de .find, para hacer los filtros.
+Verificar que un valor se encuentra en una lista.
+<!-- usamos el filtro: $in -->
+Realizar búsquedas por textos coincidentes.
+<!-- usamos el filtro: $regex -->
+Crear condiciones de filtro compuestas.
+<!-- $or  ||  $and -->
+lte = less than equal
+gte = gross than equal
+eq = equal
+estructura típica de los filtros :       db.nombreLista.find({nombreDato: {$tipoFiltro: valorFiltro, $tipoFiltro: valorFiltro}})
+$in : filtro que se encuentra a modo de lista >>> $in: [datoFiltro1, datoFiltro2, ...,]
+<!-- código para actualizar un objeto que cumple con un filtro -->
+db.nombreLista.updateMany(
+    { variableObjeto: { $filtro : valorFiltro }},
+    { $set: { nombreVariableAñadir: valorVariale }} <!-- Añade la variable dicha en el $set al objeto filtrado-->
+)
+<!-- más traducciones para las siglas de filtros -->
+ne = not equal
+$nin : filtro similar a $in, al contrario que este, no devolverá los valores de la lista.
+
