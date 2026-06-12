@@ -5,7 +5,7 @@ carpeta de apuntes : Contiene un archivo html que, como su nombre indica, no son
 
 vs.code : En su interior encontrarás las carpetas asíncronos, dating simulator y projecto final. Pasemos a explicarlas en orden.
         
-        - asíncronos : En esta carpeta encontrarás los contenidos asíncronos, tareas que debía entregar y tratar de solucionar todo problema surgido por mi cuenta, teniendoen cuenta que contaba con la                            posibilidad de preguntar para resolver dudas o por ayuda. Claramente me negué a usar cualquiera de las dos, porque en cuento las iba a hacer ya se había explicado el cómo. Dentro de                        esta carpeta encontrarás una numerosa cantidad de archivos. Apañatelas para entenderlos, porque paso de explicarlos. Sorryyyyyyyyyyyyyyyyyyyyyyyy!
+        - asíncronos : En esta carpeta encontrarás los contenidos asíncronos, tareas que debía entregar y tratar de solucionar todo problema surgido por mi cuenta, teniendoen cuenta que contaba con la                 posibilidad de preguntar para resolver dudas o por ayuda. Claramente me negué a usar cualquiera de las dos, porque en cuento las iba a hacer ya se había explicado el cómo. Dentro de                          esta carpeta encontrarás una numerosa cantidad de archivos. Apañatelas para entenderlos, porque paso de explicarlos. Sorryyyyyyyyyyyyyyyyyyyyyyyy!
 
         - dating simulator : 
 
